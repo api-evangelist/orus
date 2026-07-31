@@ -1,8 +1,26 @@
 aid: orus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/orus.png
 name: Orus
-description: 'Orus is a company surfaced as a portfolio company of partech, speedinvest and added to the
-  API Evangelist network as a stub for enrichment. Sector: Financial Services. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Orus is a French online insurance broker ("l''assurance professionnelle en ligne")
+  offering professional-liability and business insurance to independent professionals and small
+  businesses across France. Products include RC Pro (professional liability), Multirisque
+  Professionnelle, Assurance Décennale (ten-year construction liability), Assurance Bureau (office
+  insurance), Mutuelle Santé TNS (self-employed health), and Prévoyance TNS (income protection),
+  serving sectors from consultants and construction to hospitality, retail, and wellness. Backed by
+  Partech and Speedinvest, Orus operates a self-service quote-and-buy app (app.orus.eu) but publishes
+  no public developer API, SDK, or integration surface at this time. This profile was added to the API
+  Evangelist network as a portfolio lead and enriched via public web and domain probes.'
 url: https://raw.githubusercontent.com/api-evangelist/orus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Financial Services
+- Insurance
+- Insurtech
+- Professional Liability
+- SMB
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +49,22 @@ maintainers:
 common:
 - type: Website
   url: https://www.orus.eu/
+- type: HelpCenter
+  url: https://help.orus.eu/
+- type: Blog
+  url: https://www.orus.eu/blog
+- type: SignUp
+  url: https://app.orus.eu/search
+- type: Login
+  url: https://app.orus.eu/login
+- type: TermsOfService
+  url: https://www.orus.eu/conditions-generales-dutilisation
+- type: PrivacyPolicy
+  url: https://www.orus.eu/politique-confidentialite
+- type: DomainSecurity
+  url: security/orus-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
